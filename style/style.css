@@ -12,29 +12,32 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 10px;  /* Ensures space on mobile screens */
+    padding: 10px;
+    overflow: hidden;
 }
 
 .container {
     width: 100%;
-    max-width: 800px; /* Ensures the container doesn't stretch too much on large screens */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    overflow-y: auto;
 }
 
-/* Chat Box Section */
 .chat-container {
     display: flex;
     flex-direction: column;
     background-color: #333333;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .chat-box {
-    height: 250px;
+    height: 200px;
     padding: 15px;
     overflow-y: auto;
     flex-grow: 1;
@@ -62,7 +65,7 @@ body {
 }
 
 #sendButton {
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #6200ea;
     color: white;
     border: none;
@@ -76,7 +79,6 @@ body {
     background-color: #3700b3;
 }
 
-/* Summary Box */
 .summary-box,
 .explanation-box {
     padding: 15px;
@@ -95,7 +97,7 @@ body {
     font-size: 1.2em;
 }
 
-/* Button Styles */
+
 .toggle-button {
     background-color: #6200ea;
     color: white;
@@ -110,12 +112,12 @@ body {
     background-color: #3700b3;
 }
 
-/* Hide Text Initially */
+
 .hidden {
     display: none;
 }
 
-/* Media Query for Smaller Screens (Mobile Devices) */
+
 @media (max-width: 600px) {
     .container {
         width: 100%;
@@ -123,13 +125,13 @@ body {
     }
 
     .chat-box {
-        height: 200px; /* Adjusted height for small screens */
+        height: 200px; 
     }
 
     .summary-box,
     .explanation-box {
         padding: 10px;
-        max-height: 120px; /* Reduced max-height on small screens */
+        max-height: 120px; 
     }
 
     #userInput {
@@ -140,5 +142,6 @@ body {
         padding: 8px 16px;
     }
 }
+
 
 
