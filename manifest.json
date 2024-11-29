@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Study Buddy",
+  "version": "1.0",
+  "description": "Study Buddy based on Chrome API.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
+
