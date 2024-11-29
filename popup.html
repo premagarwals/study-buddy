@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
-    <div class="chat-container">
-        <div class="chat-box" id="chatBox"></div>
-        <div class="input-box">
-          <input type="text" id="userInput" placeholder="Ask me anything..." />
-          <button id="sendButton">Send</button>
+    <div class="container">
+        <!-- Chat Box Section -->
+        <div class="chat-container">
+            <div class="chat-box" id="chatBox"></div>
+            <div class="input-box">
+                <input type="text" id="userInput" placeholder="Ask me anything..." />
+                <button id="sendButton">Send</button>
+            </div>
         </div>
-      </div>
+        
+        <!-- Summary Box -->
+        <div class="summary-box" id="summaryBox">
+            <h3>Summary</h3>
+            <button class="toggle-button" id="summaryButton">Show Summary</button>
+            <p id="summaryText" class="hidden">Summary of the answer will appear here...</p>
+        </div>
+
+        <!-- Explanation Box -->
+        <div class="explanation-box" id="explanationBox">
+            <h3>Explanation</h3>
+            <button class="toggle-button" id="explanationButton">Show Explanation</button>
+            <p id="explanationText" class="hidden">Explanation of the answer will appear here...</p>
+        </div>
+    </div>
 </body>
 <script src="scripts/script.js"></script>
 </html>
