@@ -1,6 +1,70 @@
-body{
-    background-color: rgb(188, 255, 251);
-    color: rgb(36, 36, 36);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .chat-container {
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Chat Box */
+  .chat-box {
     height: 400px;
-    width: 500px;
-}
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #222222; 
+    color: #e0e0e0; 
+  }
+  
+  /* Input Box Styles */
+  .input-box {
+    display: flex;
+    padding: 10px;
+    background-color: #444444; 
+    border-top: 1px solid #555555; 
+  }
+  
+  /* Input Field */
+  #userInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #555555; 
+    border-radius: 5px;
+    background-color: #222222; 
+    color: #e0e0e0; 
+  }
+  
+  /* Send Button */
+  #sendButton {
+    padding: 10px 15px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #sendButton:hover {
+    background-color: #3700b3; 
+  }
+  
